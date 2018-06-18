@@ -14,7 +14,7 @@ public class EmployeeRepositoryImpl extends JdbcDaoSupport implements
     EmployeeRepository {
 
   public static final String BASE_SQL = "SELECT emp_id, emp_name, birthday," +
-      " position, dept_id, manager_id, manager_flag, email, username, password" +
+      " position, dept_id, dept_name, manager_id, manager_flag, email, username, password" +
       " FROM employee e";
 
   @Autowired

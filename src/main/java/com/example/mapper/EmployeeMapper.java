@@ -23,7 +23,6 @@ public class EmployeeMapper implements RowMapper<Employee> {
     String username = resultSet.getString("username");
     String password = resultSet.getString("password");
 
-    return new Employee(empId, empName, birthday, position, deptId, managerId,
-        isManager, email, username, password);
+    return new Employee(empId, empName, birthday, position);
   }
 }
